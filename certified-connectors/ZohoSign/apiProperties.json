@@ -5,9 +5,11 @@
         "type": "oauthSetting",
         "oAuthSettings": {
           "identityProvider": "oauth2",
-          "clientId": "[DUMMY_VALUE]",
+          "clientId": "< Enter Your Client ID>",
           "scopes": [
-            "openid basic_api offline_access"
+            "ZohoSign.documents.all",
+            "ZohoSign.account.all",
+            "ZohoSign.templates.all"
           ],
           "redirectMode": "Global",
           "redirectUrl": "https://global.consent.azure-apim.net/redirect",
@@ -16,21 +18,21 @@
           },
           "customParameters": {
             "authorizationUrl": {
-              "value": "https://login.yeeflow.com/connect/authorize"
+              "value": "https://accounts.zoho.com/oauth/v2/auth"
             },
             "tokenUrl": {
-              "value": "https://login.yeeflow.com/connect/token"
+              "value": "https://accounts.zoho.com/oauth/v2/token"
             },
             "refreshUrl": {
-              "value": "https://login.yeeflow.com/connect/token"
+              "value": "https://accounts.zoho.com/oauth/v2/auth"
             }
           }
         }
       }
     },
-    "iconBrandColor": "#EBF5F3",
+    "iconBrandColor": "#007ee5",
     "capabilities": [],
-    "publisher": "Yeeflow Singapore PTE. LTD.",
-    "stackOwner": "Yeeflow Singapore PTE. LTD."
+    "publisher": "Zoho Corporation"
+    "stackOwner": "Zoho Corporation"
   }
 }
